@@ -1,0 +1,6 @@
+- hosts: testservers
+  vars: 
+    packages: vsftpd
+ - tasks:
+     - name: install vsftpd
+       yum: name=vsftpd state=present
